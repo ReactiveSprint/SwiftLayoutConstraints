@@ -1,0 +1,6 @@
+framework module SwiftLayoutConstraints {
+  umbrella header "SwiftLayoutConstraints-umbrella.h"
+
+  export *
+  module * { export * }
+}
