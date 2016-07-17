@@ -21,7 +21,7 @@ public protocol LayoutConstraintType {
     init(_ object: Value, attribute: NSLayoutAttribute)
 }
 
-extension LayoutConstraintType {
+public extension LayoutConstraintType {
     public init(_ object: Value) {
         self.init(object, attribute: .NotAnAttribute)
     }
