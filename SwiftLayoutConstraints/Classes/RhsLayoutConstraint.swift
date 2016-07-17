@@ -15,13 +15,6 @@ public struct RhsLayoutConstraint<V: AnyObject>: LayoutConstraintType {
     public var constant: CGFloat
     public var multiplier: CGFloat
     
-    public init(_ object: V?, attribute: NSLayoutAttribute) {
-        self.object = object
-        self.attribute = attribute
-        self.constant = 0
-        self.multiplier = 0
-    }
-    
     public init(_ object: V?, attribute: NSLayoutAttribute, constant: CGFloat, multiplier: CGFloat) {
         self.object = object
         self.attribute = attribute
@@ -34,5 +27,11 @@ public struct RhsLayoutConstraint<V: AnyObject>: LayoutConstraintType {
         attribute = constraint.attribute
         constant = constraint.constant
         multiplier = constraint.multiplier
+    }
+}
+
+extension RhsLayoutConstraint {
+    public init(_ object: V?, attribute: NSLayoutAttribute) {
+        self.init(object, attribute: attribute, constant: 0, multiplier: 1)
     }
 }
