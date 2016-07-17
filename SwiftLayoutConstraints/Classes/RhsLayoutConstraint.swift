@@ -28,4 +28,11 @@ public struct RhsLayoutConstraint<V: AnyObject>: LayoutConstraintType {
         self.constant = constant
         self.multiplier = multiplier
     }
+    
+    public init<L : LayoutConstraintType where L.Value == V?>(_ object: V?, constraint: L) {
+        self.object = object
+        attribute = constraint.attribute
+        constant = constraint.constant
+        multiplier = constraint.multiplier
+    }
 }
