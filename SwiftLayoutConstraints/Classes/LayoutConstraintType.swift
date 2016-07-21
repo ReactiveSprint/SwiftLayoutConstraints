@@ -12,7 +12,7 @@ import Foundation
 public protocol LayoutConstraintType {
     associatedtype Value
     var object: Value { get }
-    var attribute: NSLayoutAttribute { get }
+    var attribute: NSLayoutAttribute { get set }
     var constant: CGFloat { get }
     var multiplier: CGFloat { get }
     
