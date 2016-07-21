@@ -38,4 +38,9 @@ public extension RhsLayoutConstraint {
     public init(_ object: V?, attribute: NSLayoutAttribute) {
         self.init(object, attribute: attribute, constant: DefaultConsant, multiplier: DefaultMultiplier)
     }
+    
+    public init(constant: CGFloat) {
+        self.init(nil)
+        self.constant = constant
+    }
 }

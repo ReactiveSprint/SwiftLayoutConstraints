@@ -41,9 +41,7 @@ public func ~= <Value1: AnyObject, Value2: AnyObject, L2: LayoutConstraintType w
 ///
 /// e.g: `object.height ~= 500`
 public func ~= <Value: AnyObject>(lhs: LhsLayoutConstraint<Value>, rhs: CGFloat) -> NSLayoutConstraint {
-    var constraint = RhsLayoutConstraint<Value>(nil)
-    constraint.constant = rhs
-    return lhs ~= constraint
+    return lhs ~= RhsLayoutConstraint<Value>(constant: rhs)
 }
 
 /// Initializes an **activates** `NSLayoutConstraint` array, where `rhs` values are taken from
