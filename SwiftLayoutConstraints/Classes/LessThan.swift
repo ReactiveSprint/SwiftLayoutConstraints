@@ -15,11 +15,11 @@ precedence 93
 }
 
 /// Initializes and *activates* `NSLayoutConstraint` with `NSLayoutRelation.LessThanOrEqual` relation.
-public func ~< <Value1: AnyObject, Value2: AnyObject, L2: LayoutConstraintType where L2.Value == Value2>(lhs: LhsLayoutConstraint<Value>, rhs: L2) -> NSLayoutConstraint {
-    return lhs ~< RhsConstraint(constraint: rhs)
+public func ~< <Value1: AnyObject, Value2: AnyObject, L2: LayoutConstraintType where L2.Value == Value2>(lhs: LhsLayoutConstraint<Value1>, rhs: L2) -> NSLayoutConstraint {
+    return lhs ~< RhsLayoutConstraint(constraint: rhs)
 }
 
 /// Initializes and *activates* `NSLayoutConstraint` with `NSLayoutRelation.LessThanOrEqual` relation.
-public func ~< <Value1: AnyObject, Value2: AnyObject, L2: LayoutConstraintType where L2.Value == Value2?>(lhs: LhsLayoutConstraint<Value>, rhs: L2) -> NSLayoutConstraint {
+public func ~< <Value1: AnyObject, Value2: AnyObject, L2: LayoutConstraintType where L2.Value == Value2?>(lhs: LhsLayoutConstraint<Value1>, rhs: L2) -> NSLayoutConstraint {
     return NSLayoutConstraint(lhs: lhs, rhs: rhs, relation: NSLayoutRelation.LessThanOrEqual)
 }

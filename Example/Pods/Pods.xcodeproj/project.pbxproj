@@ -92,13 +92,13 @@
 		DA177C9FB053D6A2139E1BF66F957E7B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5E3CD16DA34D0D08F766AB21A90FAC /* XCTest.framework */; };
 		DCA54337E8687685A293CC24A97F936C /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65AB889028901EAF2823A40F21B4F5B /* Contain.swift */; };
 		DF0216DBDE0084F6C87FE9275A4E9F0D /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF847D8C75EDD1CE2BA21A60D08E00 /* Nimble-dummy.m */; };
-		E54C60E71D40DFC000398918 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54C60E31D40DFC000398918 /* Equal.swift */; };
-		E54C60ED1D40E3AB00398918 /* GreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54C60EC1D40E3AB00398918 /* GreaterThan.swift */; };
 		E595912E1D3B2A51008DF8A8 /* LayoutConstraintType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595912D1D3B2A51008DF8A8 /* LayoutConstraintType.swift */; };
 		E59591381D3B3488008DF8A8 /* LhsLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59591371D3B3488008DF8A8 /* LhsLayoutConstraint.swift */; };
 		E595913A1D3B34A2008DF8A8 /* RhsLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59591391D3B34A2008DF8A8 /* RhsLayoutConstraint.swift */; };
 		E59591401D3B8270008DF8A8 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595913F1D3B8270008DF8A8 /* NSLayoutConstraint.swift */; };
-		E5C4FFB41D40E66C00E19751 /* LessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4FFB31D40E66C00E19751 /* LessThan.swift */; };
+		E5C4FFB71D40E89C00E19751 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54C60E31D40DFC000398918 /* Equal.swift */; };
+		E5C4FFB81D40E89C00E19751 /* GreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54C60EC1D40E3AB00398918 /* GreaterThan.swift */; };
+		E5C4FFB91D40E89C00E19751 /* LessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4FFB31D40E66C00E19751 /* LessThan.swift */; };
 		E6F6FF9554A6C7EABD6B92B691751DAD /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA5402AFA68BE2A5F70E09014318D /* BeLessThanOrEqual.swift */; };
 		E909D0D33037F3C642BBB8D47FC642B3 /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA1C305082DBF75710A818FFBD2714D2 /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9A500611CF699885DE8A6BAB4E6B392 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111139F990D8CA088F1437E67693E8D /* BeEmpty.swift */; };
@@ -767,7 +767,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12E0930E021F1894B60BC6AFA8F2409 /* AdapterProtocols.swift in Sources */,
-				E5C4FFB41D40E66C00E19751 /* LessThan.swift in Sources */,
 				13CC849FA70CADF802470B6A90DCDF79 /* AllPass.swift in Sources */,
 				7CC86ABC7F4135EE12A755B023F134CE /* AssertionDispatcher.swift in Sources */,
 				4E5A721963877AA3A6AA3D80DAA4E5E9 /* AssertionRecorder.swift in Sources */,
@@ -777,7 +776,6 @@
 				A2CABD326609AD67377700A148785E09 /* BeAnInstanceOf.swift in Sources */,
 				7734BABBECE0071CF5D4430515B938BF /* BeCloseTo.swift in Sources */,
 				E9A500611CF699885DE8A6BAB4E6B392 /* BeEmpty.swift in Sources */,
-				E54C60E71D40DFC000398918 /* Equal.swift in Sources */,
 				30AACAA8D51DC8C429577D9B67BB016C /* BeginWith.swift in Sources */,
 				7EBD6B630F4536CB673DC0B455CCB16D /* BeGreaterThan.swift in Sources */,
 				8040A37FF5BBDF1964CAB8C0068ED315 /* BeGreaterThanOrEqualTo.swift in Sources */,
@@ -785,7 +783,6 @@
 				7F40FC3F4DE4EA4702F41F01A12A7353 /* BeLessThan.swift in Sources */,
 				E6F6FF9554A6C7EABD6B92B691751DAD /* BeLessThanOrEqual.swift in Sources */,
 				9B5DE58927557CE87968C051D2A1C47E /* BeLogical.swift in Sources */,
-				E54C60ED1D40E3AB00398918 /* GreaterThan.swift in Sources */,
 				4AF6C26A30D865059C24DC5317786B76 /* BeNil.swift in Sources */,
 				31629295E87A24C98238C66D41983C49 /* BeVoid.swift in Sources */,
 				DCA54337E8687685A293CC24A97F936C /* Contain.swift in Sources */,
@@ -826,7 +823,10 @@
 				E59591401D3B8270008DF8A8 /* NSLayoutConstraint.swift in Sources */,
 				E595913A1D3B34A2008DF8A8 /* RhsLayoutConstraint.swift in Sources */,
 				E59591381D3B3488008DF8A8 /* LhsLayoutConstraint.swift in Sources */,
+				E5C4FFB91D40E89C00E19751 /* LessThan.swift in Sources */,
 				E595912E1D3B2A51008DF8A8 /* LayoutConstraintType.swift in Sources */,
+				E5C4FFB81D40E89C00E19751 /* GreaterThan.swift in Sources */,
+				E5C4FFB71D40E89C00E19751 /* Equal.swift in Sources */,
 				D45C17A3F125917B5A712713B9B7B4E7 /* SwiftLayoutConstraints-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
