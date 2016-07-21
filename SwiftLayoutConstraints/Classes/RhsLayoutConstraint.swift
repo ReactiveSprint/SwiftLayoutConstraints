@@ -36,6 +36,6 @@ public extension RhsLayoutConstraint {
     }
     
     public init(_ object: V?, attribute: NSLayoutAttribute) {
-        self.init(object, attribute: attribute, constant: 0, multiplier: 1)
+        self.init(object, attribute: attribute, constant: DefaultConsant, multiplier: DefaultMultiplier)
     }
 }

@@ -8,6 +8,9 @@
 
 import Foundation
 
+internal let DefaultConsant: CGFloat = 0
+internal let DefaultMultiplier: CGFloat = 1
+
 /// Represents one side of a `LayoutConstraint.`
 public protocol LayoutConstraintType {
     associatedtype Value

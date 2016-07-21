@@ -25,6 +25,6 @@ public struct LhsLayoutConstraint<Value: AnyObject>: LayoutConstraintType {
 }
 
 public extension LhsLayoutConstraint {
-    public var constant: CGFloat { return 0 }
-    public var multiplier: CGFloat { return 1 }
+    public var constant: CGFloat { return DefaultConsant }
+    public var multiplier: CGFloat { return DefaultMultiplier }
 }
