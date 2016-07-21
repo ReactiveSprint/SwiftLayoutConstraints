@@ -24,6 +24,16 @@ public func ~< <Value1: AnyObject, Value2: AnyObject, L2: LayoutConstraintType w
     return NSLayoutConstraint(lhs: lhs, rhs: rhs, relation: NSLayoutRelation.LessThanOrEqual)
 }
 
+/// Initializes and **activates* `NSLayoutConstraint` with `lhs` and `rhs` with nil object
+/// and `rhs` constant.
+///
+/// e.g: `object.height ~< 500`
+public func ~< <Value: AnyObject>(lhs: LhsLayoutConstraint<Value>, rhs: CGFloat) -> NSLayoutConstraint {
+    var constraint = RhsLayoutConstraint<Value>(nil)
+    constraint.constant = rhs
+    return lhs ~< constraint
+}
+
 /// Initializes an **activates** `NSLayoutConstraint` array, where `rhs` values are taken from
 /// `lhs.`
 ///
