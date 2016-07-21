@@ -101,6 +101,8 @@
 		DD7921B3AF923AC4D2479A334C73ADF5 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E66A5FB5DC4B06CEC3CE2712C884B3 /* DSL.m */; };
 		E48A22B4C6A1F48A772BA84953C021C6 /* LhsLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E35F730EF32BE12A7A50AA85D9D5AF /* LhsLayoutConstraint.swift */; };
 		E541F8D91D4113100049F948 /* Or.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F8D81D4113100049F948 /* Or.swift */; };
+		E541F8DB1D4128D80049F948 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F8DA1D4128D80049F948 /* UIView.swift */; };
+		E541F8DF1D412A360049F948 /* LayoutConstrainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F8DE1D412A360049F948 /* LayoutConstrainHelper.swift */; };
 		E92EB1A6190A4754C86413F4397323CF /* RhsLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF409781FA516E699515E6BD400FE343 /* RhsLayoutConstraint.swift */; };
 		EAB40484E8E1E66129585400FA7AD454 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6376337E587A7FD2825770DA3A23D6 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBBB31AF503ED106C412D9081EBE4165 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AB80206D3AFF80C1A37AEF67862FD6 /* Equal.swift */; };
@@ -260,6 +262,8 @@
 		E08B3700FD8ED5AD9156303996DAC677 /* Pods-SwiftLayoutConstraints_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLayoutConstraints_Example-umbrella.h"; sourceTree = "<group>"; };
 		E40DAA879B338603E4B8E83DFBF88F4B /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/Quick/DSL/QCKDSL.m; sourceTree = "<group>"; };
 		E541F8D81D4113100049F948 /* Or.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Or.swift; sourceTree = "<group>"; };
+		E541F8DA1D4128D80049F948 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E541F8DE1D412A360049F948 /* LayoutConstrainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstrainHelper.swift; sourceTree = "<group>"; };
 		E566E2E3F6C2557E4F6A2CC472FBBF79 /* Pods_SwiftLayoutConstraints_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLayoutConstraints_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79DB561D01DB3D3E512756D77C1490B /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Sources/Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
 		E7F12CB4AC8D60A6645673024296A8A6 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Sources/Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
@@ -552,6 +556,8 @@
 				012307B151C48D23F23C4F9C83B46E16 /* LessThan.swift */,
 				662A4C051330A56293BE47D659DF304D /* Arithmetic.swift */,
 				E541F8D81D4113100049F948 /* Or.swift */,
+				E541F8DE1D412A360049F948 /* LayoutConstrainHelper.swift */,
+				E541F8DA1D4128D80049F948 /* UIView.swift */,
 			);
 			name = Classes;
 			path = SwiftLayoutConstraints/Classes;
@@ -832,7 +838,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDDB7A6D8BD24A6DE7D68712B080541D /* Arithmetic.swift in Sources */,
+				E541F8DF1D412A360049F948 /* LayoutConstrainHelper.swift in Sources */,
 				EBBB31AF503ED106C412D9081EBE4165 /* Equal.swift in Sources */,
+				E541F8DB1D4128D80049F948 /* UIView.swift in Sources */,
 				5ECBF62BDB73DAC95CA9FA760A5CC66F /* GreaterThan.swift in Sources */,
 				7AC4E0094C52DED9D0FFF416131CCA94 /* LayoutConstraintType.swift in Sources */,
 				C0B520FF8FB99714975EBC68B96719C6 /* LessThan.swift in Sources */,
