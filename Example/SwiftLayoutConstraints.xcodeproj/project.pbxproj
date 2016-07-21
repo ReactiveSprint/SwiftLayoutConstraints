@@ -12,7 +12,6 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C85247025E3D0B61DBF9C95A /* Pods_SwiftLayoutConstraints_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A019BF9721DB58D585733CA8 /* Pods_SwiftLayoutConstraints_Tests.framework */; };
 		CD81AA559E9F0FE62B5A515E /* Pods_SwiftLayoutConstraints_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC70CB0DD61A7885592A90C /* Pods_SwiftLayoutConstraints_Example.framework */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SwiftLayoutConstraints_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLayoutConstraints_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		68192E473B3D724D457A010B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		83057E3007634A4BE2AB978A /* Pods-SwiftLayoutConstraints_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLayoutConstraints_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLayoutConstraints_Tests/Pods-SwiftLayoutConstraints_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8CC70CB0DD61A7885592A90C /* Pods_SwiftLayoutConstraints_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLayoutConstraints_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +113,6 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -368,7 +365,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
