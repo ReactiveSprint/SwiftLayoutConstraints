@@ -22,7 +22,7 @@ public struct RhsLayoutConstraint<V: AnyObject>: LayoutConstraintType {
         self.multiplier = multiplier
     }
     
-    public init<L : LayoutConstraintType where L.Value == V?>(_ object: V?, constraint: L) {
+    public init<L :LayoutConstraintType>(_ object: V?, constraint: L) {
         self.object = object
         attribute = constraint.attribute
         constant = constraint.constant
@@ -30,7 +30,11 @@ public struct RhsLayoutConstraint<V: AnyObject>: LayoutConstraintType {
     }
 }
 
-extension RhsLayoutConstraint {
+public extension RhsLayoutConstraint {
+    public init<L :LayoutConstraintType where L.Value == V>(constraint: L) {
+        self.init(constraint.object, constraint: constraint)
+    }
+    
     public init(_ object: V?, attribute: NSLayoutAttribute) {
         self.init(object, attribute: attribute, constant: 0, multiplier: 1)
     }

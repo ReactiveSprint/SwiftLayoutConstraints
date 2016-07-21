@@ -20,7 +20,7 @@ public protocol LayoutConstraintType {
     init(_ object: Value, attribute: NSLayoutAttribute)
     
     /// Initializes an instance with `object` and other values from `constraint.`
-    init<L: LayoutConstraintType where L.Value == Value>(_ object: Value, constraint: L)
+    init<L: LayoutConstraintType>(_ object: Value, constraint: L)
 }
 
 public extension LayoutConstraintType {

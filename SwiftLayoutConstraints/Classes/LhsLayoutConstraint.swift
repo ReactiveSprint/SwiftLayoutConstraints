@@ -18,13 +18,13 @@ public struct LhsLayoutConstraint<Value: AnyObject>: LayoutConstraintType {
         self.attribute = attribute
     }
     
-    public init<L : LayoutConstraintType where L.Value == Value>(_ object: Value, constraint: L) {
+    public init<L : LayoutConstraintType>(_ object: Value, constraint: L) {
         self.object = object
         self.attribute = constraint.attribute
     }
 }
 
 public extension LhsLayoutConstraint {
-    var constant: CGFloat { return 0 }
-    var multiplier: CGFloat { return 1 }
+    public var constant: CGFloat { return 0 }
+    public var multiplier: CGFloat { return 1 }
 }
