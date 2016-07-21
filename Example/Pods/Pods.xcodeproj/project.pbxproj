@@ -93,6 +93,7 @@
 		DCA54337E8687685A293CC24A97F936C /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65AB889028901EAF2823A40F21B4F5B /* Contain.swift */; };
 		DF0216DBDE0084F6C87FE9275A4E9F0D /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF847D8C75EDD1CE2BA21A60D08E00 /* Nimble-dummy.m */; };
 		E54C60E71D40DFC000398918 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54C60E31D40DFC000398918 /* Equal.swift */; };
+		E54C60ED1D40E3AB00398918 /* GreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54C60EC1D40E3AB00398918 /* GreaterThan.swift */; };
 		E595912E1D3B2A51008DF8A8 /* LayoutConstraintType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595912D1D3B2A51008DF8A8 /* LayoutConstraintType.swift */; };
 		E59591381D3B3488008DF8A8 /* LhsLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59591371D3B3488008DF8A8 /* LhsLayoutConstraint.swift */; };
 		E595913A1D3B34A2008DF8A8 /* RhsLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59591391D3B34A2008DF8A8 /* RhsLayoutConstraint.swift */; };
@@ -251,6 +252,7 @@
 		E2353FC0C41320250E7132DE6734F885 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Sources/Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
 		E2DE7320F652DCF39EB6A1476F0C761B /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Sources/Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
 		E54C60E31D40DFC000398918 /* Equal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equal.swift; sourceTree = "<group>"; };
+		E54C60EC1D40E3AB00398918 /* GreaterThan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreaterThan.swift; sourceTree = "<group>"; };
 		E566E2E3F6C2557E4F6A2CC472FBBF79 /* Pods_SwiftLayoutConstraints_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLayoutConstraints_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E595912D1D3B2A51008DF8A8 /* LayoutConstraintType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintType.swift; sourceTree = "<group>"; };
 		E59591371D3B3488008DF8A8 /* LhsLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LhsLayoutConstraint.swift; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 				E59591391D3B34A2008DF8A8 /* RhsLayoutConstraint.swift */,
 				E595913F1D3B8270008DF8A8 /* NSLayoutConstraint.swift */,
 				E54C60E31D40DFC000398918 /* Equal.swift */,
+				E54C60EC1D40E3AB00398918 /* GreaterThan.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -778,6 +781,7 @@
 				7F40FC3F4DE4EA4702F41F01A12A7353 /* BeLessThan.swift in Sources */,
 				E6F6FF9554A6C7EABD6B92B691751DAD /* BeLessThanOrEqual.swift in Sources */,
 				9B5DE58927557CE87968C051D2A1C47E /* BeLogical.swift in Sources */,
+				E54C60ED1D40E3AB00398918 /* GreaterThan.swift in Sources */,
 				4AF6C26A30D865059C24DC5317786B76 /* BeNil.swift in Sources */,
 				31629295E87A24C98238C66D41983C49 /* BeVoid.swift in Sources */,
 				DCA54337E8687685A293CC24A97F936C /* Contain.swift in Sources */,
