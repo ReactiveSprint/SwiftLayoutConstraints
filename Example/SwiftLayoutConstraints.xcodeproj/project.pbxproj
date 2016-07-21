@@ -166,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SwiftLayoutConstraints_Example" */;
 			buildPhases = (
-				CFA21BEAC8575F81764F6E97 /* 📦 Check Pods Manifest.lock */,
+				CFA21BEAC8575F81764F6E97 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				37B2ABAF55642C8C714BA3A2 /* 📦 Embed Pods Frameworks */,
-				53ECA18F4494966084D6877E /* 📦 Copy Pods Resources */,
+				37B2ABAF55642C8C714BA3A2 /* [CP] Embed Pods Frameworks */,
+				53ECA18F4494966084D6877E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SwiftLayoutConstraints_Tests" */;
 			buildPhases = (
-				554DBD7C391D9C3FB00CBD85 /* 📦 Check Pods Manifest.lock */,
+				554DBD7C391D9C3FB00CBD85 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				0A38DC7CC6A6939F75F5F1E2 /* 📦 Embed Pods Frameworks */,
-				91DEE3C9788AF1C1C1617B95 /* 📦 Copy Pods Resources */,
+				0A38DC7CC6A6939F75F5F1E2 /* [CP] Embed Pods Frameworks */,
+				91DEE3C9788AF1C1C1617B95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,7 +209,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -262,14 +262,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A38DC7CC6A6939F75F5F1E2 /* 📦 Embed Pods Frameworks */ = {
+		0A38DC7CC6A6939F75F5F1E2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,14 +277,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLayoutConstraints_Tests/Pods-SwiftLayoutConstraints_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		37B2ABAF55642C8C714BA3A2 /* 📦 Embed Pods Frameworks */ = {
+		37B2ABAF55642C8C714BA3A2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,14 +292,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLayoutConstraints_Example/Pods-SwiftLayoutConstraints_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		53ECA18F4494966084D6877E /* 📦 Copy Pods Resources */ = {
+		53ECA18F4494966084D6877E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,14 +307,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLayoutConstraints_Example/Pods-SwiftLayoutConstraints_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		554DBD7C391D9C3FB00CBD85 /* 📦 Check Pods Manifest.lock */ = {
+		554DBD7C391D9C3FB00CBD85 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,14 +322,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		91DEE3C9788AF1C1C1617B95 /* 📦 Copy Pods Resources */ = {
+		91DEE3C9788AF1C1C1617B95 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,14 +337,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLayoutConstraints_Tests/Pods-SwiftLayoutConstraints_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CFA21BEAC8575F81764F6E97 /* 📦 Check Pods Manifest.lock */ = {
+		CFA21BEAC8575F81764F6E97 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F793D65DDF414B603B1929F7 /* Pods-SwiftLayoutConstraints_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -526,6 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -533,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83057E3007634A4BE2AB978A /* Pods-SwiftLayoutConstraints_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
