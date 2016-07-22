@@ -15,6 +15,7 @@
 		E541F90A1D41F5F60049F948 /* EqualSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9091D41F5F60049F948 /* EqualSpec.swift */; };
 		E59D1D4D1D422284006BE47C /* ArithmeticSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D4C1D422284006BE47C /* ArithmeticSpec.swift */; };
 		E59D1D4F1D4231A4006BE47C /* OrSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D4E1D4231A4006BE47C /* OrSpec.swift */; };
+		E59D1D511D42481D006BE47C /* LayoutConstraintHelperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D501D42481D006BE47C /* LayoutConstraintHelperSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E541F9091D41F5F60049F948 /* EqualSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualSpec.swift; sourceTree = "<group>"; };
 		E59D1D4C1D422284006BE47C /* ArithmeticSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticSpec.swift; sourceTree = "<group>"; };
 		E59D1D4E1D4231A4006BE47C /* OrSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrSpec.swift; sourceTree = "<group>"; };
+		E59D1D501D42481D006BE47C /* LayoutConstraintHelperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintHelperSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				E541F9091D41F5F60049F948 /* EqualSpec.swift */,
 				E59D1D4C1D422284006BE47C /* ArithmeticSpec.swift */,
 				E59D1D4E1D4231A4006BE47C /* OrSpec.swift */,
+				E59D1D501D42481D006BE47C /* LayoutConstraintHelperSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -238,6 +241,7 @@
 			files = (
 				E541F9001D41DF540049F948 /* LayoutConstraintTypeSpec.swift in Sources */,
 				E541F90A1D41F5F60049F948 /* EqualSpec.swift in Sources */,
+				E59D1D511D42481D006BE47C /* LayoutConstraintHelperSpec.swift in Sources */,
 				E541F9061D41E9540049F948 /* RhsLayoutConstraintSpec.swift in Sources */,
 				E541F9081D41EBF70049F948 /* NSLayoutConstraintSpec.swift in Sources */,
 				E59D1D4D1D422284006BE47C /* ArithmeticSpec.swift in Sources */,
