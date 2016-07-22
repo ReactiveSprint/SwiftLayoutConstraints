@@ -11,7 +11,16 @@ import Foundation
 /// Converts any `LayoutConstraintType` to `RhsLayoutConstraint`
 /// and adds `rhs` to its `constant.`
 @warn_unused_result
-public func + <Value, L: LayoutConstraintType where L.Value == Value>(lhs: L, rhs: CGFloat) -> RhsLayoutConstraint<Value> {
+public func + <Value: AnyObject, L: LayoutConstraintType where L.Value == Value>(lhs: L, rhs: CGFloat) -> RhsLayoutConstraint<Value> {
+    var constraint = RhsLayoutConstraint(constraint: lhs)
+    constraint.constant += rhs
+    return constraint
+}
+
+/// Converts any `LayoutConstraintType` to `RhsLayoutConstraint`
+/// and adds `rhs` to its `constant.`
+@warn_unused_result
+public func + <Value: AnyObject, L: LayoutConstraintType where L.Value == Value?>(lhs: L, rhs: CGFloat) -> RhsLayoutConstraint<Value> {
     var constraint = RhsLayoutConstraint(constraint: lhs)
     constraint.constant += rhs
     return constraint
@@ -20,7 +29,16 @@ public func + <Value, L: LayoutConstraintType where L.Value == Value>(lhs: L, rh
 /// Converts any `LayoutConstraintType` to `RhsLayoutConstraint`
 /// and multiplies `rhs` to its `multiplier.`
 @warn_unused_result
-public func * <Value, L: LayoutConstraintType where L.Value == Value>(lhs: L, rhs: CGFloat) -> RhsLayoutConstraint<Value> {
+public func * <Value: AnyObject, L: LayoutConstraintType where L.Value == Value>(lhs: L, rhs: CGFloat) -> RhsLayoutConstraint<Value> {
+    var constraint = RhsLayoutConstraint(constraint: lhs)
+    constraint.multiplier *= rhs
+    return constraint
+}
+
+/// Converts any `LayoutConstraintType` to `RhsLayoutConstraint`
+/// and multiplies `rhs` to its `multiplier.`
+@warn_unused_result
+public func * <Value: AnyObject, L: LayoutConstraintType where L.Value == Value?>(lhs: L, rhs: CGFloat) -> RhsLayoutConstraint<Value> {
     var constraint = RhsLayoutConstraint(constraint: lhs)
     constraint.multiplier *= rhs
     return constraint

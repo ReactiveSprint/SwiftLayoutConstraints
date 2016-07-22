@@ -13,6 +13,7 @@
 		E541F9061D41E9540049F948 /* RhsLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9051D41E9540049F948 /* RhsLayoutConstraintSpec.swift */; };
 		E541F9081D41EBF70049F948 /* NSLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9071D41EBF70049F948 /* NSLayoutConstraintSpec.swift */; };
 		E541F90A1D41F5F60049F948 /* EqualSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9091D41F5F60049F948 /* EqualSpec.swift */; };
+		E59D1D4D1D422284006BE47C /* ArithmeticSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D4C1D422284006BE47C /* ArithmeticSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E541F9051D41E9540049F948 /* RhsLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhsLayoutConstraintSpec.swift; sourceTree = "<group>"; };
 		E541F9071D41EBF70049F948 /* NSLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintSpec.swift; sourceTree = "<group>"; };
 		E541F9091D41F5F60049F948 /* EqualSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualSpec.swift; sourceTree = "<group>"; };
+		E59D1D4C1D422284006BE47C /* ArithmeticSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				E541F9051D41E9540049F948 /* RhsLayoutConstraintSpec.swift */,
 				E541F9071D41EBF70049F948 /* NSLayoutConstraintSpec.swift */,
 				E541F9091D41F5F60049F948 /* EqualSpec.swift */,
+				E59D1D4C1D422284006BE47C /* ArithmeticSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -234,6 +237,7 @@
 				E541F90A1D41F5F60049F948 /* EqualSpec.swift in Sources */,
 				E541F9061D41E9540049F948 /* RhsLayoutConstraintSpec.swift in Sources */,
 				E541F9081D41EBF70049F948 /* NSLayoutConstraintSpec.swift in Sources */,
+				E59D1D4D1D422284006BE47C /* ArithmeticSpec.swift in Sources */,
 				E541F9041D41E55E0049F948 /* LhsLayoutConstraintSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
