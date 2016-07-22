@@ -61,7 +61,7 @@ class EqualSpec: QuickSpec {
             it("should equal to a constant") {
                 let lhs = LhsLayoutConstraint(view1, attribute: NSLayoutAttribute.Height)
                 let constraint = lhs ~== 50
-            
+                
                 expect(constraint.firstItem as? UIView) == view1
                 expect(constraint.firstAttribute) == NSLayoutAttribute.Height
                 expect(constraint.secondItem).to(beNil())
@@ -69,6 +69,34 @@ class EqualSpec: QuickSpec {
                 expect(constraint.relation) == NSLayoutRelation.Equal
                 expect(constraint.constant) == 50
                 expect(constraint.multiplier) == 1
+            }
+        }
+        
+        describe("Equal array") {
+            it("should equal view to array") {
+                let constraints = view1.ls_top | view1.ls_bottom | view1.ls_trailing | view1.ls_leading ~== parent
+                
+                expect(constraints.count) == 4
+                
+                expect(constraints[0].firstItem as? UIView) == view1
+                expect(constraints[0].firstAttribute) == NSLayoutAttribute.Top
+                expect(constraints[0].secondItem as? UIView) == parent
+                expect(constraints[0].secondAttribute) == NSLayoutAttribute.Top
+                
+                expect(constraints[1].firstItem as? UIView) == view1
+                expect(constraints[1].firstAttribute) == NSLayoutAttribute.Bottom
+                expect(constraints[1].secondItem as? UIView) == parent
+                expect(constraints[1].secondAttribute) == NSLayoutAttribute.Bottom
+                
+                expect(constraints[2].firstItem as? UIView) == view1
+                expect(constraints[2].firstAttribute) == NSLayoutAttribute.Trailing
+                expect(constraints[2].secondItem as? UIView) == parent
+                expect(constraints[2].secondAttribute) == NSLayoutAttribute.Trailing
+                
+                expect(constraints[3].firstItem as? UIView) == view1
+                expect(constraints[3].firstAttribute) == NSLayoutAttribute.Leading
+                expect(constraints[3].secondItem as? UIView) == parent
+                expect(constraints[3].secondAttribute) == NSLayoutAttribute.Leading
             }
         }
     }
