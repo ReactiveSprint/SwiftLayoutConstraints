@@ -27,8 +27,7 @@ view.addSubview(view2)
 view1.ls_top | .Left | .Right ~== view
 view2.ls_top ~== view1.ls_bottom + 40
 view1.ls_height ~== view.ls_height * 0.25 + 50
-view2.ls_left | .Right ~== view
-view2.ls_bottom ~== view.ls_bottom
+view2.ls_left | .Right | .Bottom ~== view
 ```
 The above code generates this output:  
 ![Example](Icons/Example.png)
