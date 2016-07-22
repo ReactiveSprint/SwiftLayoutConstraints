@@ -35,15 +35,15 @@ The above code generates this output:
 ## Overview
 
 LayoutConstraints are represented as `LayoutConstraintType`, and has two implementations:
-1. [LhsLayoutConstraint](/SwiftLayoutConstraints/Classes/LhsLayoutConstraint.swift) represents left-hand side, and does NOT support mutating its `constant` and `multiplier.`
-1. [RhsLayoutConstraint](/SwiftLayoutConstraints/Classes/RhsLayoutConstraint.swift) represents right-hand side, and supports mutating its `constant` and `multiplier.`
+ 1. [LhsLayoutConstraint](/SwiftLayoutConstraints/Classes/LhsLayoutConstraint.swift) represents left-hand side, and does NOT support mutating its `constant` and `multiplier.`
+ 1. [RhsLayoutConstraint](/SwiftLayoutConstraints/Classes/RhsLayoutConstraint.swift) represents right-hand side, and supports mutating its `constant` and `multiplier.`
 
 ## Relation Operators
 
 `SwiftLayoutConstraints` introduces operators to represent each `NSLayoutRelation`, simply `~` is added before the expressive form of the relation.
-* `~==` for `NSLayoutRelation.Equal`
-* `~>=` for `NSLayoutRelation.GreaterThanOrEqual`
-* `~<=` for `NSLayoutRelation.LessThanOrEqual`
+ * `~==` for `NSLayoutRelation.Equal`
+ * `~>=` for `NSLayoutRelation.GreaterThanOrEqual`
+ * `~<=` for `NSLayoutRelation.LessThanOrEqual`
 
 ## Installation
 
