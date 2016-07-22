@@ -74,7 +74,20 @@ class RhsLayoutConstraintSpec: QuickSpec {
             it("should copy values from another constraint") {
                 let attribute = NSLayoutAttribute.Bottom
                 
-                let org = RhsLayoutConstraint(object, attribute: attribute)
+                let org = RhsLayoutConstraint(object, attribute: attribute, constant: 10, multiplier: 0.5)
+                
+                constraint = RhsLayoutConstraint(constraint: org)
+                
+                expect(constraint.object) == object
+                expect(constraint.attribute) == attribute
+                expect(constraint.constant) == 10
+                expect(constraint.multiplier) == 0.5
+            }
+            
+            it("should copy values from lhs constraint") {
+                let attribute = NSLayoutAttribute.Bottom
+                
+                let org = LhsLayoutConstraint(object, attribute: attribute)
                 
                 constraint = RhsLayoutConstraint(constraint: org)
                 
