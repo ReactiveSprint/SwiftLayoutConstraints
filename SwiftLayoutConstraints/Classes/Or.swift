@@ -18,7 +18,7 @@ public func | <L: LayoutConstraintType>(lhs: L, rhs: NSLayoutAttribute) -> [L] {
     return [lhs] | rhs
 }
 
-/// Creates a new `LayoutConstraintType` with all values from first element of `lhs`
+/// Creates a new `LayoutConstraintType` with all values from last element of `lhs`
 /// and attribute `rhs` then appends the new constraint.
 ///
 /// This is a shortcut to creating multiple `LayoutConstraintType`
@@ -26,7 +26,7 @@ public func | <L: LayoutConstraintType>(lhs: L, rhs: NSLayoutAttribute) -> [L] {
 @warn_unused_result
 public func | <L: LayoutConstraintType>(lhs: [L], rhs: NSLayoutAttribute) -> [L] {
     precondition(!lhs.isEmpty)
-    var constraint = lhs.first!
+    var constraint = lhs.last!
     constraint.attribute = rhs
     return lhs | constraint
 }
