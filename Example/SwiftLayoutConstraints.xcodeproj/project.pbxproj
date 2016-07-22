@@ -11,6 +11,7 @@
 		E541F9001D41DF540049F948 /* LayoutConstraintTypeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F8FD1D41DF540049F948 /* LayoutConstraintTypeSpec.swift */; };
 		E541F9041D41E55E0049F948 /* LhsLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9031D41E55E0049F948 /* LhsLayoutConstraintSpec.swift */; };
 		E541F9061D41E9540049F948 /* RhsLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9051D41E9540049F948 /* RhsLayoutConstraintSpec.swift */; };
+		E541F9081D41EBF70049F948 /* NSLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9071D41EBF70049F948 /* NSLayoutConstraintSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E541F8FD1D41DF540049F948 /* LayoutConstraintTypeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintTypeSpec.swift; sourceTree = "<group>"; };
 		E541F9031D41E55E0049F948 /* LhsLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LhsLayoutConstraintSpec.swift; sourceTree = "<group>"; };
 		E541F9051D41E9540049F948 /* RhsLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhsLayoutConstraintSpec.swift; sourceTree = "<group>"; };
+		E541F9071D41EBF70049F948 /* NSLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E541F8FD1D41DF540049F948 /* LayoutConstraintTypeSpec.swift */,
 				E541F9031D41E55E0049F948 /* LhsLayoutConstraintSpec.swift */,
 				E541F9051D41E9540049F948 /* RhsLayoutConstraintSpec.swift */,
+				E541F9071D41EBF70049F948 /* NSLayoutConstraintSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -226,6 +229,7 @@
 			files = (
 				E541F9001D41DF540049F948 /* LayoutConstraintTypeSpec.swift in Sources */,
 				E541F9061D41E9540049F948 /* RhsLayoutConstraintSpec.swift in Sources */,
+				E541F9081D41EBF70049F948 /* NSLayoutConstraintSpec.swift in Sources */,
 				E541F9041D41E55E0049F948 /* LhsLayoutConstraintSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
