@@ -12,20 +12,24 @@ import SwiftLayoutConstraints
 
 class EqualSpec: QuickSpec {
     override func spec() {
+        var view1: UIView!
+        var view2: UIView!
+        var parent: UIView!
+        
+        beforeEach {
+            view1 = UIView()
+            view2 = UIView()
+            parent = UIView()
+            parent.addSubview(view1)
+            parent.addSubview(view2)
+        }
+        
         describe("Equal two constraints") {
             var lhs: LhsLayoutConstraint<UIView>!
             var rhs: LhsLayoutConstraint<UIView>!
             var constraint: NSLayoutConstraint!
-            var view1: UIView!
-            var view2: UIView!
-            var parent: UIView!
             
             beforeEach {
-                view1 = UIView()
-                view2 = UIView()
-                parent = UIView()
-                parent.addSubview(view1)
-                parent.addSubview(view2)
                 lhs = LhsLayoutConstraint(view1, attribute: NSLayoutAttribute.Bottom)
                 rhs = LhsLayoutConstraint(view2, attribute: NSLayoutAttribute.Top)
             }
@@ -50,6 +54,21 @@ class EqualSpec: QuickSpec {
                 
                 expect(constraint.constant) == -20
                 expect(constraint.multiplier) == 0.5
+            }
+        }
+        
+        describe("Equal constant") {
+            it("should equal to a constant") {
+                let lhs = LhsLayoutConstraint(view1, attribute: NSLayoutAttribute.Height)
+                let constraint = lhs ~== 50
+            
+                expect(constraint.firstItem as? UIView) == view1
+                expect(constraint.firstAttribute) == NSLayoutAttribute.Height
+                expect(constraint.secondItem).to(beNil())
+                expect(constraint.secondAttribute) == NSLayoutAttribute.NotAnAttribute
+                expect(constraint.relation) == NSLayoutRelation.Equal
+                expect(constraint.constant) == 50
+                expect(constraint.multiplier) == 1
             }
         }
     }
