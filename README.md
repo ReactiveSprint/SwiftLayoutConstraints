@@ -27,7 +27,7 @@ view1.ls_top | .Left | .Right ~== parent
 view2.ls_top ~== view1.ls_bottom + 40
 view1.ls_height ~== parent.ls_height * 0.25 + 50
 view2.ls_left | .Right ~== parent
-view2.ls_bottom ~>= parent.ls_bottom
+view2.ls_bottom ~== parent.ls_bottom
 ```
 The above code generates this output:  
 ![Example](Icons/Example.png)
