@@ -1,9 +1,6 @@
 # SwiftLayoutConstraints
 
-[![CI Status](http://img.shields.io/travis/Ahmad Baraka/SwiftLayoutConstraints.svg?style=flat)](https://travis-ci.org/Ahmad Baraka/SwiftLayoutConstraints)
-[![Version](https://img.shields.io/cocoapods/v/SwiftLayoutConstraints.svg?style=flat)](http://cocoapods.org/pods/SwiftLayoutConstraints)
-[![License](https://img.shields.io/cocoapods/l/SwiftLayoutConstraints.svg?style=flat)](http://cocoapods.org/pods/SwiftLayoutConstraints)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftLayoutConstraints.svg?style=flat)](http://cocoapods.org/pods/SwiftLayoutConstraints)
+[![CI Status](http://img.shields.io/travis/ahmadbaraka/SwiftLayoutConstraints.svg?style=flat)](https://travis-ci.org/ahmadbaraka/SwiftLayoutConstraints)
 
 ## Example
 
