@@ -18,7 +18,7 @@ let view1 = UIView()
 view1.backgroundColor = UIColor.greenColor()
 let view2 = UIView()
 view1.backgroundColor = UIColor.blueColor()
-let parent = UView()
+let parent = UIView()
 parent.addSubview(view1)
 parent.addSubview(view2)
 
