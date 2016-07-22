@@ -15,19 +15,20 @@ Basic Constraints can be made such as:
 ```swift
 // assume we have 2 views and they are added to one parent
 let view1 = UIView()
+view1.translatesAutoresizingMaskIntoConstraints = false
 view1.backgroundColor = UIColor.greenColor()
 let view2 = UIView()
-view1.backgroundColor = UIColor.blueColor()
-let parent = UIView()
-parent.addSubview(view1)
-parent.addSubview(view2)
+view2.translatesAutoresizingMaskIntoConstraints = false
+view2.backgroundColor = UIColor.blueColor()
+view.addSubview(view1)
+view.addSubview(view2)
 
 // Expressions below create, **activate** and return constraints
-view1.ls_top | .Left | .Right ~== parent 
+view1.ls_top | .Left | .Right ~== view
 view2.ls_top ~== view1.ls_bottom + 40
-view1.ls_height ~== parent.ls_height * 0.25 + 50
-view2.ls_left | .Right ~== parent
-view2.ls_bottom ~== parent.ls_bottom
+view1.ls_height ~== view.ls_height * 0.25 + 50
+view2.ls_left | .Right ~== view
+view2.ls_bottom ~== view.ls_bottom
 ```
 The above code generates this output:  
 ![Example](Icons/Example.png)
