@@ -7,52 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE73F7C88CA8F0F86C312B69 /* Pods_SwiftLayoutConstraints_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C713FD37CB56314310906CF /* Pods_SwiftLayoutConstraints_Tests.framework */; };
-		E541F9001D41DF540049F948 /* LayoutConstraintTypeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F8FD1D41DF540049F948 /* LayoutConstraintTypeSpec.swift */; };
-		E541F9041D41E55E0049F948 /* LhsLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9031D41E55E0049F948 /* LhsLayoutConstraintSpec.swift */; };
-		E541F9061D41E9540049F948 /* RhsLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9051D41E9540049F948 /* RhsLayoutConstraintSpec.swift */; };
-		E541F9081D41EBF70049F948 /* NSLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9071D41EBF70049F948 /* NSLayoutConstraintSpec.swift */; };
-		E541F90A1D41F5F60049F948 /* EqualSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541F9091D41F5F60049F948 /* EqualSpec.swift */; };
-		E59D1D4D1D422284006BE47C /* ArithmeticSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D4C1D422284006BE47C /* ArithmeticSpec.swift */; };
-		E59D1D4F1D4231A4006BE47C /* OrSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D4E1D4231A4006BE47C /* OrSpec.swift */; };
-		E59D1D511D42481D006BE47C /* LayoutConstraintHelperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D501D42481D006BE47C /* LayoutConstraintHelperSpec.swift */; };
+		15C8576F5FBA830E6F261FFA /* Pods_SwiftLayoutConstraints_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF394B60EB9E958F3138D854 /* Pods_SwiftLayoutConstraints_Tests.framework */; };
+		5E84E5313137DECF0F5670D0 /* Pods_SwiftLayoutConstraints_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FE7FBD30E607DFC140DB7E /* Pods_SwiftLayoutConstraints_Example.framework */; };
+		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		E59D1D781D42A249006BE47C /* LayoutConstraintTypeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D6E1D42A18E006BE47C /* LayoutConstraintTypeSpec.swift */; };
+		E59D1D791D42A249006BE47C /* LhsLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D6F1D42A18E006BE47C /* LhsLayoutConstraintSpec.swift */; };
+		E59D1D7A1D42A249006BE47C /* RhsLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D6D1D42A18E006BE47C /* RhsLayoutConstraintSpec.swift */; };
+		E59D1D7B1D42A249006BE47C /* NSLayoutConstraintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D6B1D42A18E006BE47C /* NSLayoutConstraintSpec.swift */; };
+		E59D1D7C1D42A249006BE47C /* EqualSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D691D42A18E006BE47C /* EqualSpec.swift */; };
+		E59D1D7D1D42A249006BE47C /* ArithmeticSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D681D42A18E006BE47C /* ArithmeticSpec.swift */; };
+		E59D1D7E1D42A249006BE47C /* OrSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D6C1D42A18E006BE47C /* OrSpec.swift */; };
+		E59D1D7F1D42A249006BE47C /* LayoutConstraintHelperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D6A1D42A18E006BE47C /* LayoutConstraintHelperSpec.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = SwiftLayoutConstraints;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		049A8E6590D4ADBEECE91269 /* Pods-SwiftLayoutConstraints_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLayoutConstraints_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLayoutConstraints_Tests/Pods-SwiftLayoutConstraints_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		11D2634F13AF20995598C1F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		1960769F0A1421836DFA7397 /* Pods-SwiftLayoutConstraints_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLayoutConstraints_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLayoutConstraints_Tests/Pods-SwiftLayoutConstraints_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1A73872BE7EEFFD94E34BB9E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		21E2ED12C3F11F44580BB38D /* Pods-SwiftLayoutConstraints_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLayoutConstraints_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLayoutConstraints_Example/Pods-SwiftLayoutConstraints_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3114BFF46D3136E5D090B297 /* Pods-SwiftLayoutConstraints_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLayoutConstraints_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLayoutConstraints_Tests/Pods-SwiftLayoutConstraints_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		601AD6EF3DC47B9198A5AA73 /* Pods-SwiftLayoutConstraints_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLayoutConstraints_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLayoutConstraints_Example/Pods-SwiftLayoutConstraints_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* SwiftLayoutConstraints_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLayoutConstraints_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SwiftLayoutConstraints_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLayoutConstraints_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80296D9879124A1FF6F1C3D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9C713FD37CB56314310906CF /* Pods_SwiftLayoutConstraints_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLayoutConstraints_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D96C5234428ED247E957D50C /* SwiftLayoutConstraints.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftLayoutConstraints.podspec; path = ../SwiftLayoutConstraints.podspec; sourceTree = "<group>"; };
-		E541F8FD1D41DF540049F948 /* LayoutConstraintTypeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintTypeSpec.swift; sourceTree = "<group>"; };
-		E541F9031D41E55E0049F948 /* LhsLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LhsLayoutConstraintSpec.swift; sourceTree = "<group>"; };
-		E541F9051D41E9540049F948 /* RhsLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhsLayoutConstraintSpec.swift; sourceTree = "<group>"; };
-		E541F9071D41EBF70049F948 /* NSLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintSpec.swift; sourceTree = "<group>"; };
-		E541F9091D41F5F60049F948 /* EqualSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualSpec.swift; sourceTree = "<group>"; };
-		E59D1D4C1D422284006BE47C /* ArithmeticSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticSpec.swift; sourceTree = "<group>"; };
-		E59D1D4E1D4231A4006BE47C /* OrSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrSpec.swift; sourceTree = "<group>"; };
-		E59D1D501D42481D006BE47C /* LayoutConstraintHelperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintHelperSpec.swift; sourceTree = "<group>"; };
+		74675C7293B8F9FEA2944885 /* Pods-SwiftLayoutConstraints_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLayoutConstraints_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLayoutConstraints_Tests/Pods-SwiftLayoutConstraints_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		91F8DE1545407B51D949E3B2 /* SwiftLayoutConstraints.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftLayoutConstraints.podspec; path = ../SwiftLayoutConstraints.podspec; sourceTree = "<group>"; };
+		93FE7FBD30E607DFC140DB7E /* Pods_SwiftLayoutConstraints_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLayoutConstraints_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF394B60EB9E958F3138D854 /* Pods_SwiftLayoutConstraints_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLayoutConstraints_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82D4833D3D88274CC4E84F4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E59D1D681D42A18E006BE47C /* ArithmeticSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticSpec.swift; sourceTree = "<group>"; };
+		E59D1D691D42A18E006BE47C /* EqualSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualSpec.swift; sourceTree = "<group>"; };
+		E59D1D6A1D42A18E006BE47C /* LayoutConstraintHelperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintHelperSpec.swift; sourceTree = "<group>"; };
+		E59D1D6B1D42A18E006BE47C /* NSLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintSpec.swift; sourceTree = "<group>"; };
+		E59D1D6C1D42A18E006BE47C /* OrSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrSpec.swift; sourceTree = "<group>"; };
+		E59D1D6D1D42A18E006BE47C /* RhsLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhsLayoutConstraintSpec.swift; sourceTree = "<group>"; };
+		E59D1D6E1D42A18E006BE47C /* LayoutConstraintTypeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintTypeSpec.swift; sourceTree = "<group>"; };
+		E59D1D6F1D42A18E006BE47C /* LhsLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LhsLayoutConstraintSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E84E5313137DECF0F5670D0 /* Pods_SwiftLayoutConstraints_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACE21AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE73F7C88CA8F0F86C312B69 /* Pods_SwiftLayoutConstraints_Tests.framework in Frameworks */,
+				15C8576F5FBA830E6F261FFA /* Pods_SwiftLayoutConstraints_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CA39608EB8D1335D2084391 /* Frameworks */ = {
+		00E46333297C606F52D0C21D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9C713FD37CB56314310906CF /* Pods_SwiftLayoutConstraints_Tests.framework */,
+				93FE7FBD30E607DFC140DB7E /* Pods_SwiftLayoutConstraints_Example.framework */,
+				BF394B60EB9E958F3138D854 /* Pods_SwiftLayoutConstraints_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -61,32 +96,56 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD21AFB9204008FA782 /* Example for SwiftLayoutConstraints */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				966D09D4F63676FDEEB4DF48 /* Pods */,
-				3CA39608EB8D1335D2084391 /* Frameworks */,
+				99938B61B8CC420FFCAC8722 /* Pods */,
+				00E46333297C606F52D0C21D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD01AFB9204008FA782 /* SwiftLayoutConstraints_Example.app */,
 				607FACE51AFB9204008FA782 /* SwiftLayoutConstraints_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		607FACD21AFB9204008FA782 /* Example for SwiftLayoutConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
+			);
+			name = "Example for SwiftLayoutConstraints";
+			path = SwiftLayoutConstraints;
+			sourceTree = "<group>";
+		};
+		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD41AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E541F8FD1D41DF540049F948 /* LayoutConstraintTypeSpec.swift */,
-				E541F9031D41E55E0049F948 /* LhsLayoutConstraintSpec.swift */,
-				E541F9051D41E9540049F948 /* RhsLayoutConstraintSpec.swift */,
-				E541F9071D41EBF70049F948 /* NSLayoutConstraintSpec.swift */,
-				E541F9091D41F5F60049F948 /* EqualSpec.swift */,
-				E59D1D4C1D422284006BE47C /* ArithmeticSpec.swift */,
-				E59D1D4E1D4231A4006BE47C /* OrSpec.swift */,
-				E59D1D501D42481D006BE47C /* LayoutConstraintHelperSpec.swift */,
+				E59D1D6E1D42A18E006BE47C /* LayoutConstraintTypeSpec.swift */,
+				E59D1D6F1D42A18E006BE47C /* LhsLayoutConstraintSpec.swift */,
+				E59D1D6D1D42A18E006BE47C /* RhsLayoutConstraintSpec.swift */,
+				E59D1D6B1D42A18E006BE47C /* NSLayoutConstraintSpec.swift */,
+				E59D1D691D42A18E006BE47C /* EqualSpec.swift */,
+				E59D1D681D42A18E006BE47C /* ArithmeticSpec.swift */,
+				E59D1D6C1D42A18E006BE47C /* OrSpec.swift */,
+				E59D1D6A1D42A18E006BE47C /* LayoutConstraintHelperSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -103,18 +162,20 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				D96C5234428ED247E957D50C /* SwiftLayoutConstraints.podspec */,
-				11D2634F13AF20995598C1F9 /* README.md */,
-				80296D9879124A1FF6F1C3D7 /* LICENSE */,
+				91F8DE1545407B51D949E3B2 /* SwiftLayoutConstraints.podspec */,
+				D82D4833D3D88274CC4E84F4 /* README.md */,
+				1A73872BE7EEFFD94E34BB9E /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		966D09D4F63676FDEEB4DF48 /* Pods */ = {
+		99938B61B8CC420FFCAC8722 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				049A8E6590D4ADBEECE91269 /* Pods-SwiftLayoutConstraints_Tests.debug.xcconfig */,
-				1960769F0A1421836DFA7397 /* Pods-SwiftLayoutConstraints_Tests.release.xcconfig */,
+				601AD6EF3DC47B9198A5AA73 /* Pods-SwiftLayoutConstraints_Example.debug.xcconfig */,
+				21E2ED12C3F11F44580BB38D /* Pods-SwiftLayoutConstraints_Example.release.xcconfig */,
+				74675C7293B8F9FEA2944885 /* Pods-SwiftLayoutConstraints_Tests.debug.xcconfig */,
+				3114BFF46D3136E5D090B297 /* Pods-SwiftLayoutConstraints_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -122,20 +183,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACE41AFB9204008FA782 /* SwiftLayoutConstraints_Tests */ = {
+		607FACCF1AFB9204008FA782 /* SwiftLayoutConstraints_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SwiftLayoutConstraints_Tests" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SwiftLayoutConstraints_Example" */;
 			buildPhases = (
-				1F1AC10C5C1A9B78CE0CCB30 /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				89F0A318F850EC2BD6DBB7A3 /* [CP] Embed Pods Frameworks */,
-				01EF005101CF21D8647E373D /* [CP] Copy Pods Resources */,
+				EC4F45DDF1ED4FBF0DA8DBD1 /* [CP] Check Pods Manifest.lock */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
+				9D271BC3468E136B4A8DF0A9 /* [CP] Embed Pods Frameworks */,
+				05404A99597F9CAF5D6D65EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = SwiftLayoutConstraints_Example;
+			productName = SwiftLayoutConstraints;
+			productReference = 607FACD01AFB9204008FA782 /* SwiftLayoutConstraints_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		607FACE41AFB9204008FA782 /* SwiftLayoutConstraints_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SwiftLayoutConstraints_Tests" */;
+			buildPhases = (
+				C877CC71AAF8C7038F9AFC98 /* [CP] Check Pods Manifest.lock */,
+				607FACE11AFB9204008FA782 /* Sources */,
+				607FACE21AFB9204008FA782 /* Frameworks */,
+				607FACE31AFB9204008FA782 /* Resources */,
+				46F61496D363A24C6AB16F9C /* [CP] Embed Pods Frameworks */,
+				1EF7FAE5925CB1641595DE1A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
 			name = SwiftLayoutConstraints_Tests;
 			productName = Tests;
@@ -152,6 +234,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 607FACCF1AFB9204008FA782;
@@ -171,12 +256,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				607FACCF1AFB9204008FA782 /* SwiftLayoutConstraints_Example */,
 				607FACE41AFB9204008FA782 /* SwiftLayoutConstraints_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		607FACCE1AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,7 +283,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01EF005101CF21D8647E373D /* [CP] Copy Pods Resources */ = {
+		05404A99597F9CAF5D6D65EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLayoutConstraints_Example/Pods-SwiftLayoutConstraints_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EF7FAE5925CB1641595DE1A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,22 +313,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLayoutConstraints_Tests/Pods-SwiftLayoutConstraints_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1F1AC10C5C1A9B78CE0CCB30 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		89F0A318F850EC2BD6DBB7A3 /* [CP] Embed Pods Frameworks */ = {
+		46F61496D363A24C6AB16F9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,25 +328,106 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLayoutConstraints_Tests/Pods-SwiftLayoutConstraints_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9D271BC3468E136B4A8DF0A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLayoutConstraints_Example/Pods-SwiftLayoutConstraints_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C877CC71AAF8C7038F9AFC98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4F45DDF1ED4FBF0DA8DBD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		607FACCC1AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACE11AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E541F9001D41DF540049F948 /* LayoutConstraintTypeSpec.swift in Sources */,
-				E541F90A1D41F5F60049F948 /* EqualSpec.swift in Sources */,
-				E59D1D511D42481D006BE47C /* LayoutConstraintHelperSpec.swift in Sources */,
-				E541F9061D41E9540049F948 /* RhsLayoutConstraintSpec.swift in Sources */,
-				E541F9081D41EBF70049F948 /* NSLayoutConstraintSpec.swift in Sources */,
-				E59D1D4D1D422284006BE47C /* ArithmeticSpec.swift in Sources */,
-				E541F9041D41E55E0049F948 /* LhsLayoutConstraintSpec.swift in Sources */,
-				E59D1D4F1D4231A4006BE47C /* OrSpec.swift in Sources */,
+				E59D1D7A1D42A249006BE47C /* RhsLayoutConstraintSpec.swift in Sources */,
+				E59D1D7C1D42A249006BE47C /* EqualSpec.swift in Sources */,
+				E59D1D7F1D42A249006BE47C /* LayoutConstraintHelperSpec.swift in Sources */,
+				E59D1D781D42A249006BE47C /* LayoutConstraintTypeSpec.swift in Sources */,
+				E59D1D7B1D42A249006BE47C /* NSLayoutConstraintSpec.swift in Sources */,
+				E59D1D7D1D42A249006BE47C /* ArithmeticSpec.swift in Sources */,
+				E59D1D791D42A249006BE47C /* LhsLayoutConstraintSpec.swift in Sources */,
+				E59D1D7E1D42A249006BE47C /* OrSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* SwiftLayoutConstraints_Example */;
+			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDA1AFB9204008FA782 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDF1AFB9204008FA782 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
@@ -335,9 +512,35 @@
 			};
 			name = Release;
 		};
+		607FACF01AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 601AD6EF3DC47B9198A5AA73 /* Pods-SwiftLayoutConstraints_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftLayoutConstraints/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		607FACF11AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E2ED12C3F11F44580BB38D /* Pods-SwiftLayoutConstraints_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftLayoutConstraints/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 049A8E6590D4ADBEECE91269 /* Pods-SwiftLayoutConstraints_Tests.debug.xcconfig */;
+			baseConfigurationReference = 74675C7293B8F9FEA2944885 /* Pods-SwiftLayoutConstraints_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -356,7 +559,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1960769F0A1421836DFA7397 /* Pods-SwiftLayoutConstraints_Tests.release.xcconfig */;
+			baseConfigurationReference = 3114BFF46D3136E5D090B297 /* Pods-SwiftLayoutConstraints_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -377,6 +580,15 @@
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
 				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SwiftLayoutConstraints_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

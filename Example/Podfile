@@ -1,9 +1,13 @@
 platform :ios, '8.0'
 use_frameworks!
 
-target 'SwiftLayoutConstraints_Tests' do
+target 'SwiftLayoutConstraints_Example' do
     pod 'SwiftLayoutConstraints', :path => '../'
     
-    pod 'Quick', '~> 0.9'
-    pod 'Nimble', '~> 4.0'
+    target 'SwiftLayoutConstraints_Tests' do
+        inherit! :search_paths
+        
+        pod 'Quick', '~> 0.9'
+        pod 'Nimble', '~> 4.0'
+    end
 end
