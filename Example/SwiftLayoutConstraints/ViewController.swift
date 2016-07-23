@@ -22,9 +22,8 @@ class ViewController: UIViewController {
         view.addSubview(view2)
         
         // Expressions below create, **activate** and return constraints
-        view1.ls_top | .Left | .Right ~== view
+        view1.ls_top | .Left | .Right | view2.ls_left | .Right | .Bottom ~== view
         view2.ls_top ~== view1.ls_bottom + 40
         view1.ls_height ~== view.ls_height * 0.25 + 50
-        view2.ls_left | .Right | .Bottom ~== view
     }
 }

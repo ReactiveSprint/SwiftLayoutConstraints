@@ -13,7 +13,7 @@ SwiftLayoutConstraints targets `Swift 2.2` and `iOS 8`
 Basic Constraints can be made such as:
 
 ```swift
-// assume we have 2 views and they are added to one parent
+// assume we have 2 views and they are added to one parent (view)
 let view1 = UIView()
 view1.translatesAutoresizingMaskIntoConstraints = false
 view1.backgroundColor = UIColor.greenColor()
@@ -24,10 +24,9 @@ view.addSubview(view1)
 view.addSubview(view2)
 
 // Expressions below create, **activate** and return constraints
-view1.ls_top | .Left | .Right ~== view
+view1.ls_top | .Left | .Right | view2.ls_left | .Right | .Bottom ~== view
 view2.ls_top ~== view1.ls_bottom + 40
 view1.ls_height ~== view.ls_height * 0.25 + 50
-view2.ls_left | .Right | .Bottom ~== view
 ```
 The above code generates this output:  
 ![Example](Icons/Example.png)
