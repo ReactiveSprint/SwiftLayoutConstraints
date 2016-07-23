@@ -66,10 +66,14 @@ AnyObject :op [LayoutConstraintType]
 
 ## Installation
 
-### [Carthage](https://github.com/Carthage/Carthage)
-
+#### [Carthage](https://github.com/Carthage/Carthage)
 ```
 github "ahmadbaraka/SwiftLayoutConstraints" ~> 1.0
+```
+
+#### [Cocoapods](https://cocoapods.org)
+```
+pod 'SwiftLayoutConstraints', '~> 1.0'
 ```
 
 ## License
