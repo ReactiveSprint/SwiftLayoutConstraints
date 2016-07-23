@@ -6,9 +6,9 @@
 
 #### Compatibility
 
-SwiftLayoutConstraints targets `Swift 2.2`
+SwiftLayoutConstraints targets `Swift 2.2` and `iOS 8`
 
-## Basic Constraints
+## Constraints
 
 Basic Constraints can be made such as:
 
@@ -34,16 +34,36 @@ The above code generates this output:
 
 ## Overview
 
-LayoutConstraints are represented as `LayoutConstraintType`, and has two implementations:
+LayoutConstraints are represented as [LayoutConstraintType](/SwiftLayoutConstraints/Classes/LayoutConstraintType.swift), and has two implementations:
  1. [LhsLayoutConstraint](/SwiftLayoutConstraints/Classes/LhsLayoutConstraint.swift) represents left-hand side, and does NOT support mutating its `constant` and `multiplier.`
  1. [RhsLayoutConstraint](/SwiftLayoutConstraints/Classes/RhsLayoutConstraint.swift) represents right-hand side, and supports mutating its `constant` and `multiplier.`
 
-## Relation Operators
+### Relation Operators
 
 `SwiftLayoutConstraints` introduces operators to represent each `NSLayoutRelation`, simply `~` is added before the expressive form of the relation.
  * `~==` for `NSLayoutRelation.Equal`
  * `~>=` for `NSLayoutRelation.GreaterThanOrEqual`
  * `~<=` for `NSLayoutRelation.LessThanOrEqual`
+
+### Supported Expressions
+
+Representing any Relation Operator as `:op`, the following expressions are supported:
+
+```
+LhsLayoutConstraint :op LayoutConstraintType
+LhsLayoutConstraint :op CGFloat
+[LhsLayoutConstraint] :op AnyObject
+AnyObject :op [LayoutConstraintType]
+[LhsLayoutConstraint] :op [LayoutConstraintType]
+```
+
+###  Quick Notes
+
+ 1. At any point, Left-hand side of any expression is always `LhsLayoutConstraint`
+ 1. You may create an array of constraints using `|` operator, i.e: `view.ls_height | view.ls_width`
+ 1. Operator `|` also accepts `NSLayoutAttribute` where values (object, constant and multiplier) are taken from previous constraint, i.e: `view.ls_top | .Bottom`
+ 1. You may use `+` or `*` to set constraint's `constant` and `multiplier`, i.e: `view1.ls_top ~== view2.ls_bottom * 1 + 20`
+ 1. Consider operators `precedence` in your expressions, i.e: `view.ls_top * 0.5 + 50` is not same as `view.ls_top + 50 * 0.5`
 
 ## Installation
 
