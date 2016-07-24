@@ -22,6 +22,8 @@
 		E59D1D7D1D42A249006BE47C /* ArithmeticSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D681D42A18E006BE47C /* ArithmeticSpec.swift */; };
 		E59D1D7E1D42A249006BE47C /* OrSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D6C1D42A18E006BE47C /* OrSpec.swift */; };
 		E59D1D7F1D42A249006BE47C /* LayoutConstraintHelperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1D6A1D42A18E006BE47C /* LayoutConstraintHelperSpec.swift */; };
+		E59D1DB61D447EC1006BE47C /* LessThanSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1DB41D447EBB006BE47C /* LessThanSpec.swift */; };
+		E59D1DB91D447F92006BE47C /* GreaterThanSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D1DB71D447F8E006BE47C /* GreaterThanSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		E59D1D6D1D42A18E006BE47C /* RhsLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhsLayoutConstraintSpec.swift; sourceTree = "<group>"; };
 		E59D1D6E1D42A18E006BE47C /* LayoutConstraintTypeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintTypeSpec.swift; sourceTree = "<group>"; };
 		E59D1D6F1D42A18E006BE47C /* LhsLayoutConstraintSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LhsLayoutConstraintSpec.swift; sourceTree = "<group>"; };
+		E59D1DB41D447EBB006BE47C /* LessThanSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessThanSpec.swift; sourceTree = "<group>"; };
+		E59D1DB71D447F8E006BE47C /* GreaterThanSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreaterThanSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				E59D1D6D1D42A18E006BE47C /* RhsLayoutConstraintSpec.swift */,
 				E59D1D6B1D42A18E006BE47C /* NSLayoutConstraintSpec.swift */,
 				E59D1D691D42A18E006BE47C /* EqualSpec.swift */,
+				E59D1DB71D447F8E006BE47C /* GreaterThanSpec.swift */,
+				E59D1DB41D447EBB006BE47C /* LessThanSpec.swift */,
 				E59D1D681D42A18E006BE47C /* ArithmeticSpec.swift */,
 				E59D1D6C1D42A18E006BE47C /* OrSpec.swift */,
 				E59D1D6A1D42A18E006BE47C /* LayoutConstraintHelperSpec.swift */,
@@ -392,9 +398,11 @@
 				E59D1D7A1D42A249006BE47C /* RhsLayoutConstraintSpec.swift in Sources */,
 				E59D1D7C1D42A249006BE47C /* EqualSpec.swift in Sources */,
 				E59D1D7F1D42A249006BE47C /* LayoutConstraintHelperSpec.swift in Sources */,
+				E59D1DB91D447F92006BE47C /* GreaterThanSpec.swift in Sources */,
 				E59D1D781D42A249006BE47C /* LayoutConstraintTypeSpec.swift in Sources */,
 				E59D1D7B1D42A249006BE47C /* NSLayoutConstraintSpec.swift in Sources */,
 				E59D1D7D1D42A249006BE47C /* ArithmeticSpec.swift in Sources */,
+				E59D1DB61D447EC1006BE47C /* LessThanSpec.swift in Sources */,
 				E59D1D791D42A249006BE47C /* LhsLayoutConstraintSpec.swift in Sources */,
 				E59D1D7E1D42A249006BE47C /* OrSpec.swift in Sources */,
 			);
