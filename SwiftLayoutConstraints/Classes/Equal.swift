@@ -49,7 +49,8 @@ public func ~== <Value: AnyObject>(lhs: LhsLayoutConstraint<Value>, rhs: CGFloat
 ///
 /// This is a shortcut to create for example: `object1.top | left | right = object2.top | left | right.`
 public func ~== <Value1: AnyObject, Value2: AnyObject>(lhs: [LhsLayoutConstraint<Value1>], rhs: Value2) -> [NSLayoutConstraint] {
-    return lhs.map { return $0 ~== RhsLayoutConstraint(rhs, constraint: $0) }
+    let right = lhs.map { RhsLayoutConstraint(rhs, constraint: $0) }
+    return lhs ~== right
 }
 
 /// Initializes an **activates** `NSLayoutConstraint` array, where `lhs` values are taken from
@@ -57,7 +58,8 @@ public func ~== <Value1: AnyObject, Value2: AnyObject>(lhs: [LhsLayoutConstraint
 ///
 /// This is a shortcut to create for example: `object1.top | left | right = object2.top | left | right.`
 public func ~== <Value1: AnyObject, Value2: AnyObject, L: LayoutConstraintType where L.Value == Value2>(lhs: Value1, rhs: [L]) -> [NSLayoutConstraint] {
-    return rhs.map { return LhsLayoutConstraint(lhs, constraint: $0) ~== $0 }
+    let left = rhs.map { LhsLayoutConstraint(lhs, constraint: $0) }
+    return left ~== rhs
 }
 
 /// Initializes an **activates** `NSLayoutConstraint` array, where `lhs` values are taken from
@@ -65,18 +67,27 @@ public func ~== <Value1: AnyObject, Value2: AnyObject, L: LayoutConstraintType w
 ///
 /// This is a shortcut to create for example: `object1.top | left | right = object2.top | left | right.`
 public func ~== <Value1: AnyObject, Value2: AnyObject, L: LayoutConstraintType where L.Value == Value2?>(lhs: Value1, rhs: [L]) -> [NSLayoutConstraint] {
-    return rhs.map { return LhsLayoutConstraint(lhs, constraint: $0) ~== $0 }
+    let left = rhs.map { LhsLayoutConstraint(lhs, constraint: $0) }
+    return left ~== rhs
 }
 
 /// Initializes an **activates** `NSLayoutConstraint` array,
 /// applying `~==` for each element in `lhs` to each element in `rhs.`
 public func ~== <Value1: AnyObject, Value2: AnyObject, L: LayoutConstraintType where L.Value == Value2>(lhs: [LhsLayoutConstraint<Value1>], rhs: [L]) -> [NSLayoutConstraint] {
+    return lhs ~== rhs.map { RhsLayoutConstraint(constraint: $0) }
+}
+
+/// Initializes an **activates** `NSLayoutConstraint` array,
+/// applying `~==` for each element in `lhs` to each element in `rhs.`
+public func ~== <Value1: AnyObject, Value2: AnyObject, L: LayoutConstraintType where L.Value == Value2?>(lhs: [LhsLayoutConstraint<Value1>], rhs: [L]) -> [NSLayoutConstraint] {
     precondition(lhs.count == rhs.count)
     
     var constraints = [NSLayoutConstraint]()
     for i in 0..<lhs.count {
-        constraints.append(lhs[i] ~== rhs[i])
+        constraints.append(NSLayoutConstraint(lhs: lhs[i], rhs: rhs[i], relation: .Equal, activate: false))
     }
+    
+    NSLayoutConstraint.activateConstraints(constraints)
     
     return constraints
 }
